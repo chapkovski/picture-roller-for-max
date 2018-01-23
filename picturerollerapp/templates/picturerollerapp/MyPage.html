@@ -1,0 +1,13 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+    Round: {{ view.round_number }} of {{ Constants.num_rounds }}
+{% endblock %}
+
+{% block content %}
+    <h1>What do you think about this guy?</h1>
+ <img src = {%  static cur_photo %} width=300px/>
+    {% next_button %}
+
+{% endblock %}
